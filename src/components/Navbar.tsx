@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="bg-white/30 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 border-b border-white/20">
       <div className="container mx-auto px-6 py-6 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">MyLogo</div>
+        <div className="text-2xl font-bold text-blue-600">AI Voice Call</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
