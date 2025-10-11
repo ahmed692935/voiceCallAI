@@ -17,7 +17,7 @@ import { BiBot } from "react-icons/bi";
 import Navbar from "../components/Navbar";
 import { BsArrowRight } from "react-icons/bs";
 import {
-    FaArrowUp,
+  FaArrowUp,
   FaFacebookMessenger,
   FaInstagram,
   FaStar,
@@ -25,7 +25,7 @@ import {
 } from "react-icons/fa";
 import { MdOutlineSms } from "react-icons/md";
 import { SiMake } from "react-icons/si";
-import { TbBrandZapier } from "react-icons/tb";
+// import { TbBrandZapier } from "react-icons/tb";
 import Footer from "../components/Footer";
 // import BgImage from "../assets/images/2.webp";
 
@@ -55,21 +55,21 @@ const features = [
   //     title: "Go High Level",
   //     desc: "Connect with 5,000+ apps",
   //   },
-{
-  icon: (
-    <div className="flex flex-row items-center justify-center space-y-1 group">
-      {[...Array(3)].map((_, i) => (
-        <FaArrowUp
-          key={i}
-          className="w-4 h-4 text-blue-900 transition-transform duration-300 group-hover:-translate-y-1"
-          style={{ transitionDelay: `${i * 100}ms` }}
-        />
-      ))}
-    </div>
-  ),
-  title: "Go High Level",
-  desc: "Connect with 5,000+ apps",
-}
+  {
+    icon: (
+      <div className="flex flex-row items-center justify-center space-y-1 group">
+        {[...Array(3)].map((_, i) => (
+          <FaArrowUp
+            key={i}
+            className="w-4 h-4 text-blue-900 transition-transform duration-300 group-hover:-translate-y-1"
+            style={{ transitionDelay: `${i * 100}ms` }}
+          />
+        ))}
+      </div>
+    ),
+    title: "Go High Level",
+    desc: "Connect with 5,000+ apps",
+  },
 ];
 
 const reviews = [
