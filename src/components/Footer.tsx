@@ -11,7 +11,7 @@ const Footer = () => {
           {/* 🟦 Column 1 */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold text-white mb-4">
-              Voice<span className="text-blue-500"> AI</span>
+              Voice<span className="text-blue-900"> AI</span>
             </h2>
             <p className="text-gray-400 leading-relaxed">
               Empowering businesses with intelligent AI agents to automate,
