@@ -349,7 +349,7 @@ const InitaiteCall = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 rounded-lg font-semibold text-white transition-all ${
+              className={`w-full py-3 rounded-lg font-semibold text-white transition-all cursor-pointer ${
                 loading
                   ? "bg-gray-500 cursor-not-allowed"
                   : "bg-blue-900 hover:bg-blue-800"
