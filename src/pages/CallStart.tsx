@@ -39,13 +39,13 @@ const CallStart = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-900 text-white">
       <div className="text-center space-y-6">
         {/* Phone Animation */}
         <div className="relative flex justify-center">
           <div className="absolute w-40 h-40 rounded-full bg-blue-400 opacity-20 animate-ping"></div>
           <div className="absolute w-32 h-32 rounded-full bg-blue-400 opacity-30 animate-ping delay-200"></div>
-          <div className="relative w-24 h-24 flex justify-center items-center rounded-full bg-blue-600 shadow-lg">
+          <div className="relative w-24 h-24 flex justify-center items-center rounded-full bg-blue-700 shadow-lg">
             <FaPhoneAlt size={36} />
           </div>
         </div>

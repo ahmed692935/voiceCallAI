@@ -27,6 +27,7 @@ import { MdOutlineSms } from "react-icons/md";
 import { SiMake } from "react-icons/si";
 // import { TbBrandZapier } from "react-icons/tb";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 // import BgImage from "../assets/images/2.webp";
 
 const features = [
@@ -94,6 +95,7 @@ const reviews = [
 ];
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar />
@@ -127,7 +129,10 @@ const LandingPage = () => {
               </p>
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <button className="group flex items-center justify-center gap-2 bg-black border border-transparent cursor-pointer text-white rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_4px_0_0_rgba(255,255,255,1)]">
+                <button
+                  className="group flex items-center justify-center gap-2 bg-black border border-transparent cursor-pointer text-white rounded-full px-8 py-3 text-lg font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_4px_0_0_rgba(255,255,255,1)]"
+                  onClick={() => navigate("/initiate-call")}
+                >
                   <BiBot className="w-5 h-5" />
                   Start building
                   <BsArrowRight className="w-4 h-4 mt-1 transform transition-transform duration-300 group-hover:translate-x-2" />
