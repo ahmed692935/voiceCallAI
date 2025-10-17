@@ -79,7 +79,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "InBound Details", path: "/inbound" },
+    { name: "Call Details", path: "/inbound" },
     { name: "Initiate Call", path: "/initiate-call" },
   ];
 

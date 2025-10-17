@@ -114,7 +114,7 @@ const CallStart = () => {
   }
 
   const { agent_persona, phone, meeting_objective, result } = callData || {};
-  const { message, room_name, call_id } = result || {};
+  const { room_name } = result || {};
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-900 text-white">
@@ -123,7 +123,7 @@ const CallStart = () => {
         <div className="relative flex justify-center">
           <div className="absolute w-40 h-40 rounded-full bg-blue-400 opacity-20 animate-ping"></div>
           <div className="absolute w-32 h-32 rounded-full bg-blue-400 opacity-30 animate-ping delay-200"></div>
-          <div className="relative w-24 h-24 flex justify-center items-center rounded-full bg-blue-700 shadow-lg">
+          <div className="relative w-24 h-24 flex justify-center items-center rounded-full bg-blue-900 shadow-lg">
             <FaPhoneAlt size={36} />
           </div>
         </div>
@@ -140,12 +140,12 @@ const CallStart = () => {
         {/* Call Info from API */}
         {result && (
           <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 mt-4 space-y-2">
-            <p className="text-sm">
+            {/* <p className="text-sm">
               <span className="font-semibold">📞 Message:</span> {message}
             </p>
             <p className="text-sm">
               <span className="font-semibold">🪪 Call ID:</span> {call_id}
-            </p>
+            </p> */}
             <p className="text-sm">
               <span className="font-semibold">🧩 Room Name:</span> {room_name}
             </p>
